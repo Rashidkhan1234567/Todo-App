@@ -6,11 +6,11 @@ const time = new Date();
 btn.addEventListener("click", function () {
   const min  = time.getMinutes()
   let date_and_time ;
-  if(time.getHours() < 12){
+  if(time.getHours() > 12){
     if(min < 10){
-      date_and_time = `${time.getHours()} : 0${time.getMinutes()} PM`
+      date_and_time = `${time.getHours()-12} : 0${time.getMinutes()} PM`
     }else{
-      date_and_time = `${time.getHours()} : ${time.getMinutes()} PM`
+      date_and_time = `${time.getHours()-12} : ${time.getMinutes()} PM`
     }
     
   }else{
