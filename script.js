@@ -32,7 +32,8 @@ btn.addEventListener("click", function () {
   })
 
   document.getElementById("Delete").addEventListener("click" , (e)=>{
-    ul.removeChild(e.target.parentElement.parentElement )
+        ul.removeChild(ul.lastChild)
+
   })
   // console.dir(ul);
   
